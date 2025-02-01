@@ -1,34 +1,34 @@
-# 🎩 Chapéu Seletor de Hogwarts - O Portal Místico da Seleção 
+# 🏰 Chapéu Seletor de Hogwarts
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/WellingtonHp22/Desafio_Chapeu_Seletor_Hogwarts/refs/heads/main/assets/images/escola-de-magia.jpg" alt="Brasão de Hogwarts" width="15%">
+  <img src="assets/images/escola-de-magia.jpg" alt="Brasão de Hogwarts" width="300"/>
   <br>
-  <em>"Hmm, difícil... muito difícil... Vejo muita coragem, uma mente nada má... Há talento, ah, minha nossa, isso sim... então, onde vou colocá-lo?"</em>
+  <em>"Hmm, difícil... muito difícil... Onde devo colocá-lo?"</em>
+  <br><br>
+  <a href="https://wellingtonhp22.github.io/Desafio_Chapeu_Seletor_Hogwarts/" target="_blank">
+    <img src="https://img.shields.io/badge/🪄-Experimente%20Agora!-purple?style=for-the-badge" alt="Experimente Agora"/>
+  </a>
 </div>
 
-## 📜 Pergaminho de Boas-Vindas
+## 📜 Carta de Hogwarts
 
 ESCOLA DE MAGIA E BRUXARIA DE HOGWARTS
 Diretor: Alvo Dumbledore
-(Ordem de Merlin, Primeira Classe, Grande Feiticeiro, Bruxo Chefe, Cacique Supremo, Confederação Internacional de Bruxos)
 
 Prezado(a) Bruxo(a),
 
-É com grande alegria que informamos que você foi selecionado(a) para explorar este portal mágico, onde o lendário Chapéu Seletor foi transformado em uma experiência digital extraordinária. Preparamos uma jornada única onde a tecnologia trouxa encontra a magia ancestral!
+É com grande satisfação que anunciamos a chegada do Chapéu Seletor Digital! 
+
+🔮 **[Acesse o Portal Mágico](https://wellingtonhp22.github.io/Desafio_Chapeu_Seletor_Hogwarts/)**
 
 ## 🪄 Encantamentos Disponíveis
+
 
 ### ✨ Magias Principais
 - 🎯 Feitiço de Seleção de Casas
 - 🌟 Encanto de Revelação de Destino
 - 🎭 Transformação Visual Personalizada
 - 📜 Pergaminhos Mágicos Animados
-
-## 📚 Índice
-- [Encantamentos Disponíveis](#-encantamentos-disponíveis)
-- [Como Usar Seus Poderes](#-como-usar-seus-poderes)
-- [Artefatos Mágicos Utilizados](#-artefatos-mágicos-utilizados)
-- [Casas de Hogwarts](#-casas-de-hogwarts)
 
 ## 🧙‍♂️ Como Usar Seus Poderes
 
