@@ -1,0 +1,383 @@
+:root {
+    --color-primary: #2b0a3d; /* Roxo escuro mágico */
+    --color-secondary: #1a0326; /* Roxo mais escuro */
+    --color-tertiary: #8b4dc7; /* Roxo médio */
+    --color-button: #c17900; /* Dourado */
+    --color-button-hover: #ffd700; /* Dourado brilhante */
+    --color-text: #e0e0e0; /* Texto claro */
+    --color-white: #FFFFFF;
+    --color-spell: #00ff8c;
+    --color-parchment: #f4d03f;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+    gap: 20px; /* Espaço entre as imagens e o título */
+}
+
+.header-banner img {
+    max-width: 150px; /* Aumente o tamanho conforme necessário */
+    height: auto;
+}
+
+/* Seção de entrada */
+.input-section {
+    flex: 60%;
+    background: rgba(26, 3, 38, 0.9); /* Fundo semi-transparente */
+    border: 2px solid var(--color-button);
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-image: url('./assets/images/Hogwarts.jpg'); /* Adicione a imagem de fundo */
+    background-size: cover; /* Voltando para cover */
+    background-position: center; /* Centralize a imagem */
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px rgba(193, 121, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+/* Ajustando o overlay de volta */
+.input-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 3, 38, 0.85); /* Reduzido a opacidade */
+    z-index: -1;
+    border-radius: 64px 64px 0 0;
+    backdrop-filter: blur(1px); /* Adicionado leve blur para melhorar nitidez */
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-button);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-family: "Merriweather", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-button);
+    margin: 10px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Contêineres de entrada e botão */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    position: relative; /* Adicionar posição relativa */
+    z-index: 10; /* Garantir que o wrapper esteja acima do fundo */
+    margin-top: 30px; /* Aumentado para dar espaço ao label */
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    background-color: rgba(43, 10, 61, 0.95); /* Mudando para um fundo mais escuro */
+    font-family: 'Merriweather', serif;
+    transition: all 0.3s ease;
+    z-index: 10; /* Adicionar z-index para garantir que esteja acima do fundo */
+    position: relative; /* Adicionar posição relativa */
+    color: var(--color-white); /* Adicionando cor branca ao texto */
+}
+
+.input-name::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Cor do placeholder mais suave */
+}
+
+.input-name:focus {
+    box-shadow: 0 0 15px var(--color-spell);
+    border-color: var(--color-spell);
+}
+
+.button-container {
+    width: 300px;
+    justify-content: center;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de botão */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-add {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    border-radius: 0 25px 25px 0;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 10; /* Aumentado para garantir que fique acima de outros elementos */
+    pointer-events: auto; /* Garantir que eventos de clique funcionem */
+    cursor: pointer;
+}
+
+.button-add:hover {
+    background-color: var(--color-button-hover);
+    color: var(--color-secondary);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-white); /* Altere a cor para branco */
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: var(--color-button-hover); /* Alterado para dourado brilhante */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.name-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.name-list li {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    color: var(--color-button-hover); /* Alterado para dourado brilhante */
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 12px 40px; /* Aumentado o padding lateral para dar espaço aos ícones */
+    background-color: rgba(43, 10, 61, 0.95);
+    border-radius: 8px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--color-button);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(193, 121, 0, 0.2);
+    display: flex; /* Adicionado para melhor controle do layout */
+    justify-content: center;
+    align-items: center;
+}
+
+.name-list li::before {
+    content: '✨';
+    position: absolute;
+    left: 15px; /* Ajustado para dar mais espaço */
+    opacity: 0.7;
+    font-size: 1rem; /* Tamanho ajustado do ícone */
+}
+
+.name-list li::after {
+    content: '✨';
+    position: absolute;
+    right: 15px; /* Ajustado para dar mais espaço */
+    opacity: 0.7;
+    font-size: 1rem; /* Tamanho ajustado do ícone */
+}
+
+/* Botão de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: auto;
+    min-width: 250px;
+    padding: 15px 30px;
+    color: var(--color-white);
+    background: linear-gradient(45deg, #740001, #D3A625);
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+    transition: all 0.3s ease;
+    border: 2px solid var(--color-button);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+}
+
+.button-draw:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px var(--color-button-hover);
+    background: linear-gradient(45deg, #8f0001, #ffd700);
+}
+
+.wand-icon {
+    font-size: 1.5rem;
+    animation: sparkle 2s infinite;
+}
+
+.button-text {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+@keyframes sparkle {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
+
+.mensagem-magica {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    left: auto;
+    transform: none;
+    background-color: rgba(43, 10, 61, 0.95);
+    color: var(--color-button-hover);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--color-button);
+    box-shadow: 0 0 15px var(--color-button);
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+    max-width: 400px;
+    text-align: center;
+    z-index: 1000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translate(-50%, 100px);
+    }
+    to { 
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.visually-hidden {
+    color: var(--color-white); /* Adicionando cor branca ao texto do label */
+    position: absolute;
+    opacity: 1;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    clip: auto;
+    height: auto;
+    width: auto;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    /* Novo posicionamento */
+    left: 10px;
+    top: -25px;
+}
+
+.footer-image {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hogwarts-footer {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(193, 121, 0, 0.3);
+}
+
+.castle-image {
+    display: none;
+}
+
+/* Remover a tag img do HTML e adicionar um overlay para dar profundidade */
+.castle-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, rgba(43, 10, 61, 0.3));
+    border-radius: 17px;
+}
+
+.hogwarts-castle {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Aumentado de 15px para 20px */
+    box-shadow: 0 0 40px rgba(193, 121, 0, 0.6); /* Aumentada a sombra */
+    border: 3px solid var(--color-button); /* Aumentada a borda */
+    transition: transform 0.3s ease; /* Adicionada transição suave */
+}
+
+.hogwarts-castle:hover {
+    transform: scale(1.02); /* Efeito de zoom suave ao passar o mouse */
+    box-shadow: 0 0 50px rgba(193, 121, 0, 0.8);
+}
