@@ -29,8 +29,6 @@ Prezado(a) Bruxo(a),
 - [Como Usar Seus Poderes](#-como-usar-seus-poderes)
 - [Artefatos Mágicos Utilizados](#-artefatos-mágicos-utilizados)
 - [Casas de Hogwarts](#-casas-de-hogwarts)
-- [Instalação](#-instalação)
-- [Contribuição](#-contribuição)
 
 ## 🧙‍♂️ Como Usar Seus Poderes
 
